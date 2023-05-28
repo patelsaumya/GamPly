@@ -1,0 +1,75 @@
+.cardTitle {
+  margin: 15px 0;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+}
+
+.divider {
+  margin: 0;
+  height: 2px;
+  background: white;
+}
+
+.cardContent {
+  margin: 10px 0;
+  color: black;
+}
+
+.noHints {
+  text-align: center;
+}
+
+.unlockHints {
+  text-align: center;
+}
+
+.unlockHints > button {
+  color: white;
+  font-weight: bold;
+  background: black;
+}
+
+.hints {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.hints > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.hints > div:nth-child(1) > * {
+  border-bottom: 1px dotted black;
+}
+
+.hints > div:nth-child(1) > div:nth-child(1), .hints > div:nth-child(2) > div:nth-child(1)  {
+  border-right: 1px dotted black;
+  font-weight: bold;
+}
+
+.hints > div > * {
+  text-align: center;
+  padding: 5px;
+}
+
+.hints > div:nth-child(1) > div:nth-child(1), .hints > div:nth-child(2) > div:nth-child(1) {
+  color: #2C3333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hints > div:nth-child(1) > div:nth-child(2), .hints > div:nth-child(2) > div:nth-child(2) {
+  color: darkslateblue;
+}
+
+.hintsCard {
+  margin-top: 25px;
+}
+
+.hintsBody {
+  padding: 0 10px;
+}

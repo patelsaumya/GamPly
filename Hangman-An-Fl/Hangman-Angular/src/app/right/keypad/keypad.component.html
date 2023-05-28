@@ -1,0 +1,111 @@
+<mat-card style="background-color: black;" class="keypadCard">
+  <h2 class="cardTitle">Keypad</h2>
+  <div class="divider"></div>
+  <div class="cardContent">
+<!--    <div class="first-row">-->
+<!--      <div>A</div>-->
+<!--      <div>B</div>-->
+<!--      <div>C</div>-->
+<!--      <div>D</div>-->
+<!--      <div>E</div>-->
+<!--      <div>F</div>-->
+<!--      <div>G</div>-->
+<!--      <div>H</div>-->
+<!--      <div>I</div>-->
+<!--      <div>J</div>-->
+<!--    </div>-->
+
+<!--    <div class="second-row">-->
+<!--      <div>K</div>-->
+<!--      <div>L</div>-->
+<!--      <div>M</div>-->
+<!--      <div>N</div>-->
+<!--      <div>O</div>-->
+<!--      <div>P</div>-->
+<!--      <div>Q</div>-->
+<!--      <div>R</div>-->
+<!--      <div>S</div>-->
+<!--    </div>-->
+
+<!--    <div class="third-row">-->
+<!--      <div>T</div>-->
+<!--      <div>U</div>-->
+<!--      <div>V</div>-->
+<!--      <div>W</div>-->
+<!--      <div>X</div>-->
+<!--      <div>Y</div>-->
+<!--      <div>Z</div>-->
+<!--    </div>-->
+
+    <div class="first-row">
+      <app-key
+        *ngFor="let key of 'ABCDEFGH'.split('')"
+        [key]="key"
+        (keyClicked)="keyClicked($event)"
+        [isCorrect]="isCorrect[key]"
+      ></app-key>
+    </div>
+    <div class="second-row">
+      <app-key
+        *ngFor="let key of 'IJKLMNO'.split('')"
+        [key]="key"
+        (keyClicked)="keyClicked($event)"
+        [isCorrect]="isCorrect[key]"
+      ></app-key>
+    </div>
+    <div class="third-row">
+      <app-key
+        *ngFor="let key of 'PQRSTU'.split('')"
+        [key]="key"
+        (keyClicked)="keyClicked($event)"
+        [isCorrect]="isCorrect[key]"
+      ></app-key>
+    </div>
+    <div class="fourth-row">
+      <app-key
+        *ngFor="let key of 'VWXYZ'.split('')"
+        [key]="key"
+        (keyClicked)="keyClicked($event)"
+        [isCorrect]="isCorrect[key]"
+      ></app-key>
+    </div>
+
+<!--    <div class="first-row">-->
+<!--      <div (click)="keyClicked('A')">A</div>-->
+<!--      <div class="not-exists" (click)="keyClicked('B')">B</div>-->
+<!--      <div (click)="keyClicked('C')">C</div>-->
+<!--      <div (click)="keyClicked('D')">D</div>-->
+<!--      <div class="exists" (click)="keyClicked('E')">E</div>-->
+<!--      <div (click)="keyClicked('F')">F</div>-->
+<!--      <div (click)="keyClicked('G')">G</div>-->
+<!--      <div class="not-exists" (click)="keyClicked('H')">H</div>-->
+<!--    </div>-->
+
+<!--    <div class="second-row">-->
+<!--      <div (click)="keyClicked('I')">I</div>-->
+<!--      <div (click)="keyClicked('J')">J</div>-->
+<!--      <div (click)="keyClicked('K')">K</div>-->
+<!--      <div (click)="keyClicked('L')">L</div>-->
+<!--      <div class="exists" (click)="keyClicked('M')">M</div>-->
+<!--      <div (click)="keyClicked('N')">N</div>-->
+<!--      <div class="exists" (click)="keyClicked('O')">O</div>-->
+<!--    </div>-->
+
+<!--    <div class="third-row">-->
+<!--      <div (click)="keyClicked('P')">P</div>-->
+<!--      <div (click)="keyClicked('Q')">Q</div>-->
+<!--      <div class="not-exists" (click)="keyClicked('R')">R</div>-->
+<!--      <div (click)="keyClicked('S')">S</div>-->
+<!--      <div (click)="keyClicked('T')">T</div>-->
+<!--      <div class="not-exists" (click)="keyClicked('U')">U</div>-->
+<!--    </div>-->
+
+<!--    <div class="fourth-row">-->
+<!--      <div (click)="keyClicked('V')">V</div>-->
+<!--      <div (click)="keyClicked('W')">W</div>-->
+<!--      <div class="not-exists" (click)="keyClicked('X')">X</div>-->
+<!--      <div (click)="keyClicked('Y')">Y</div>-->
+<!--      <div (click)="keyClicked('Z')">Z</div>-->
+<!--    </div>-->
+  </div>
+</mat-card>

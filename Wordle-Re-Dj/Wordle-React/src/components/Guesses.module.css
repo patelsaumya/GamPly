@@ -1,0 +1,23 @@
+.guesses {
+    /*padding: 10px 15px 10px;*/
+    padding: 10px 0;
+    display: grid;
+    height: fit-content;
+    grid-row-gap: 30px;
+}
+
+.cardTitle {
+    height: 20%;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.noGuesses {
+    text-align: center;
+    padding: 10px 0;
+    /*#D1D1D1*/
+    color: black;
+}

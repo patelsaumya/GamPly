@@ -1,0 +1,30 @@
+<hr *ngIf="isFinished">
+<div class="results" *ngIf="isFinished">
+  <div>
+    <div>
+      Mistakes
+    </div>
+    <div>
+      {{isCorrect ? numberOfIncorrects + ' / 6' : 'N/A'}}
+    </div>
+    <div>
+      Hint Used
+    </div>
+    <div>
+      {{isUnlockHintClicked ? 'Yes' : 'No'}}
+    </div>
+    <div>
+      Did Quit
+    </div>
+    <div>
+      {{isFinished && !isCorrect && numberOfIncorrects < 6 ? 'Yes' : 'No'}}
+    </div>
+    <div>
+      Secret
+    </div>
+    <div>
+      {{secretWord}}
+    </div>
+  </div>
+  <div><b>{{isCorrect ? 'WON' : 'LOST'}}</b></div>
+</div>

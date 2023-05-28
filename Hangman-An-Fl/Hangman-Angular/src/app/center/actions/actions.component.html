@@ -1,0 +1,4 @@
+<div class="actions">
+  <button mat-raised-button (click)="onReset()">{{isFinished ? 'PLAY AGAIN' : 'RESET'}}</button>
+  <button mat-raised-button (click)="onQuit()" [disabled]="isFinished" [ngClass]="{'disabled': isFinished}">QUIT</button>
+</div>

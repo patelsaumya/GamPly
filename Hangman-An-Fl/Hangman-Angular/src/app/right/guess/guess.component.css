@@ -1,0 +1,30 @@
+.guessCard {
+  height: 67.5px;
+}
+
+.cardContent {
+  margin: 10px 0;
+  text-align: center;
+  display: grid;
+  /*grid-template-columns: 15% 15% 15% 15% 15% 15%;*/
+  /*grid-template-columns: 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5%;*/
+  grid-column-gap: 2%;
+  padding: 0 10px;
+  height: 47.5px;
+}
+
+.cardContent > div {
+  padding-bottom: 4px;
+  border-bottom: 5px solid black;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.guessed {
+  color: darkgreen;
+}
+
+.not-guessed {
+  color: darkblue;
+}

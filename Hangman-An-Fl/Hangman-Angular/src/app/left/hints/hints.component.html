@@ -1,0 +1,44 @@
+<mat-card style="background-color: dimgray;" class="hintsCard">
+  <h2 class="cardTitle">Hints</h2>
+  <div class="divider"></div>
+  <div class="cardContent noHints" *ngIf="numberOfIncorrects < 3 && !isCorrect && !isFinished">Make at-least 3 mistakes to unlock</div>
+  <div class="cardContent noHints" *ngIf="!isUnlockHintClicked && (!isCorrect && isFinished)">Game is finished</div>
+  <div class="cardContent noHints" *ngIf="!isUnlockHintClicked && (isCorrect && isFinished)">Kudos, you got it without any hints</div>
+  <div class="cardContent noHints" *ngIf="isConstructingHints">Constructing Hints...</div>
+  <div class="cardContent unlockHints" *ngIf="numberOfIncorrects >= 3 && !isCorrect && !isFinished && !isUnlockHintClicked">
+    <button mat-raised-button (click)="constructHints()">
+      UNLOCK MY LIFESAVER
+    </button>
+  </div>
+
+  <div class="hintsBody" *ngIf="isUnlockHintClicked">
+    <div class="cardContent hints">
+      <div>
+        <div>
+          Presence
+        </div>
+        <div>
+          <span *ngFor="let ele of presenceHint.slice(0, presenceHint.length-1)">
+            <b>{{ele}}</b> |
+          </span>
+          <span>
+            <b>{{presenceHint[presenceHint.length-1]}}</b>
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          Absence
+        </div>
+        <div>
+          <span *ngFor="let ele of absenceHint.slice(0, absenceHint.length-1)">
+            <b>{{ele}}</b> |
+          </span>
+          <span>
+            <b>{{absenceHint[absenceHint.length-1]}}</b>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

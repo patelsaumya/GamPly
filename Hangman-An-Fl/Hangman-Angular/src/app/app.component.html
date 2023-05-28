@@ -1,0 +1,21 @@
+<div class="game">
+  <app-header></app-header>
+  <div *ngIf="isLoading" class="fetching">
+    Fetching the Secret Word...
+  </div>
+  <div class="container" *ngIf="!isLoading">
+    <div class="left">
+      <app-hangman></app-hangman>
+      <app-hints></app-hints>
+    </div>
+    <div class="center">
+      <app-status></app-status>
+      <app-actions></app-actions>
+      <app-result></app-result>
+    </div>
+    <div class="right">
+      <app-guess></app-guess>
+      <app-keypad></app-keypad>
+    </div>
+  </div>
+</div>

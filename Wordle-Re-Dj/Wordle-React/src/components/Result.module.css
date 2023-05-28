@@ -1,0 +1,63 @@
+.container {
+    border-radius: 5%;
+    border: 2px solid black;
+    padding: 2%;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.winOrLose {
+    border-top: 4px double black;
+    margin-top: 1%;
+    padding-top: 1%;
+    color: saddlebrown;
+}
+
+.result > span:nth-child(1), .result > span:nth-child(3), .result > span:nth-child(5) {
+    border-bottom: 1px dotted black;
+    border-right: 1px dotted black;
+}
+
+.result > span:nth-child(2), .result > span:nth-child(4), .result > span:nth-child(6) {
+    border-bottom: 1px dotted black;
+}
+
+.result > span:nth-child(7) {
+    border-right: 1px dotted black;
+}
+
+.result > span:nth-of-type(odd) {
+    color: white;
+    /*color: black;*/
+    font-weight: bold;
+}
+
+.result > span:nth-of-type(even) {
+    color: saddlebrown;
+    font-style: italic;
+    /*font-weight: bold;*/
+}
+
+.rulerResult {
+    margin: 20px 0;
+    text-align: center;
+    overflow: visible;
+    border: none;
+    border-top: 1px solid;
+}
+
+.rulerResult:after {
+    content: 'Result';
+    position: relative;
+    top: -13px;
+    padding: 0 4px;
+    background: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+}
+
+.output {
+    padding: 0 15px;
+    text-align: center;
+}

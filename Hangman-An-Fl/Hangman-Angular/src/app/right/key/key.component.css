@@ -1,0 +1,45 @@
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  border-radius: 25%;
+  background: black;
+  color: white;
+  height: 40px;
+  font-size: large;
+  transition-duration: 100ms;
+}
+
+.key:hover {
+  cursor: pointer;
+  /*font-size: xx-large;*/
+  /*font-weight: bold;*/
+  background: white;
+  color: black;
+}
+
+.exists {
+  background: darkgreen!important;
+  opacity: 0.6;
+}
+
+.exists:hover, .not-exists:hover {
+  cursor: not-allowed!important;
+  color: white!important;
+}
+
+.not-exists {
+  background: darkred!important;
+  opacity: 0.6;
+}
+
+.finished:hover {
+  cursor: not-allowed!important;
+  background: black!important;
+  color: white!important;
+}
+
+.finished {
+  opacity: 0.6;
+}

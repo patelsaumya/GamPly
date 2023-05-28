@@ -1,0 +1,22 @@
+<mat-card style="background-color: white;" class="guessCard">
+  <div
+    class="cardContent"
+    [ngStyle]="{'grid-template-columns': gridTemplateColumns}">
+<!--    <div class="guessed">M</div>-->
+<!--    <div class="guessed">O</div>-->
+<!--    <div class="not-guessed">N</div>-->
+<!--    <div class="not-guessed">K</div>-->
+<!--    <div class="guessed">E</div>-->
+<!--    <div class="not-guessed">Y</div>-->
+    <div
+      *ngFor="let char of secretWord.split('')"
+      [ngClass]="{
+        'guessed': keysGuessed.includes(char),
+        'not-guessed': !keysGuessed.includes(char) && isFinished
+      }"
+    >
+      {{ keysGuessed.includes(char) ? char : (isFinished ? char : '') }}
+    </div>
+
+  </div>
+</mat-card>

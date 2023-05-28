@@ -1,0 +1,25 @@
+.right {
+    background: mediumseagreen;
+}
+
+.misplaced {
+    background: orange;
+}
+
+.wrong {
+    background: lightslategrey;
+}
+
+.character {
+    border-radius: 20%;
+    height: 40px;
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+}
+
+.badgeHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

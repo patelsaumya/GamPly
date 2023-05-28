@@ -1,0 +1,11 @@
+<mat-card style="background-color: white;">
+  <div class="hangman">
+    <img
+      *ngIf="numberOfIncorrects > 0"
+      src="../../../assets/images/hangman-0{{numberOfIncorrects}}-light.png"
+      alt="hangman-0{{numberOfIncorrects}}"/>
+    <div *ngIf="numberOfIncorrects === 0" class="noMistakes">
+      Make a mistake and I will start to draw HANGMAN
+    </div>
+  </div>
+</mat-card>

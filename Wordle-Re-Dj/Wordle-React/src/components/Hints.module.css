@@ -1,0 +1,50 @@
+.container {
+    /*padding: 10px 15px 10px;*/
+    margin: 10px 20px;
+    height: fit-content;
+    border-radius: 5%;
+    border: 2px solid black;
+    padding: 2%;
+}
+
+.hints {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.hints > span {
+    padding: 3% 0;
+}
+
+.hints > span:nth-child(odd) {
+    border-right: 1px dotted black;
+    color: #2C3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hints > span:nth-child(even) {
+    text-align: center;
+    color: darkslateblue;
+}
+
+.hints > span:nth-child(1), .hints > span:nth-child(3), .hints > span:nth-child(2), .hints > span:nth-child(4) {
+    border-bottom: 1px dotted black;
+}
+
+.cardTitle {
+    height: 20%;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.noHints {
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+}
+

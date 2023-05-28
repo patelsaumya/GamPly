@@ -1,0 +1,78 @@
+.keypadCard {
+  margin-top: 25px;
+}
+
+.cardTitle {
+  margin: 15px 0;
+  text-align: center;
+  /*color: black;*/
+  color: white;
+  letter-spacing: 5px;
+}
+
+.divider {
+  margin: 0;
+  height: 2px;
+  background: white;
+}
+
+.cardContent {
+  margin: 20px 0;
+}
+
+.second-row {
+  padding: 0 calc(100%/2 - 7*40px/2 - 8*100%/18 + 8*8*40px/18);
+}
+
+.third-row {
+  padding: 0 calc(100%/2 - 6*40px/2 - 7*100%/18 + 7*8*40px/18);
+}
+
+.fourth-row {
+  padding: 0 calc(100%/2 - 5*40px/2 - 6*100%/18 + 6*8*40px/18);
+}
+
+.first-row, .second-row, .third-row, .fourth-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*.first-row > *, .second-row > *, .third-row > *, .fourth-row > * {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  width: 40px;*/
+/*  border-radius: 25%;*/
+/*  background: black;*/
+/*  color: white;*/
+/*  height: 40px;*/
+/*  font-size: large;*/
+/*  transition-duration: 100ms;*/
+/*}*/
+
+/*.first-row > *:hover, .second-row > *:hover, .third-row > *:hover, .fourth-row > *:hover {*/
+/*  cursor: pointer;*/
+/*  !*font-size: xx-large;*!*/
+/*  !*font-weight: bold;*!*/
+/*  background: white;*/
+/*  color: black;*/
+/*}*/
+
+.first-row, .second-row, .third-row {
+  margin-bottom: 20px;
+}
+
+/*.exists {*/
+/*  background: darkgreen!important;*/
+/*  opacity: 0.6;*/
+/*}*/
+
+/*.exists:hover, .not-exists:hover {*/
+/*  cursor: not-allowed!important;*/
+/*  color: white!important;*/
+/*}*/
+
+/*.not-exists {*/
+/*  background: darkred!important;*/
+/*  opacity: 0.6;*/
+/*}*/

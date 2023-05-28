@@ -1,0 +1,23 @@
+.actions {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 10px;
+}
+
+.actions > button {
+  color: black;
+  font-weight: bold;
+  background: orange;
+}
+
+.actions > button:nth-child(1) {
+  margin: 0 5px 0 0;
+}
+
+.actions > button:nth-child(2) {
+  margin: 0 0 0 5px;
+}
+
+.disabled {
+  opacity: 0.6;
+}

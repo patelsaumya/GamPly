@@ -1,0 +1,7 @@
+<div (click)="clicked()" class="key"
+  [ngClass]="{
+    'exists': isCorrect===true,
+    'not-exists': isCorrect===false,
+    'finished': isCorrect===undefined && isFinished
+  }"
+>{{key}}</div>

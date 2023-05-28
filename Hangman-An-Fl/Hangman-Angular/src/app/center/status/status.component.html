@@ -1,0 +1,18 @@
+<mat-card style="background-color: dimgray;">
+  <h2 class="cardTitle">Status</h2>
+  <div class="divider"></div>
+  <div class="cardContent">
+    <div  *ngIf="!isFinished && !isCorrect">
+      Number of Incorrects: <b>{{numberOfIncorrects}}</b> / <b>6</b>
+    </div>
+    <div *ngIf="isCorrect">
+      You Won
+    </div>
+    <div *ngIf="numberOfIncorrects === 6">
+      You Lost
+    </div>
+    <div *ngIf="isFinished && numberOfIncorrects < 6 && !isCorrect">
+      You Quit
+    </div>
+  </div>
+</mat-card>

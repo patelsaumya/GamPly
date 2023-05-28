@@ -1,0 +1,22 @@
+.check {
+    margin-top: 20px;
+    /*width: 300px;*/
+    width: 100%;
+}
+
+.quitAndReset {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 6%;
+    text-align: center;
+}
+
+.quitAndReset > button {
+    width: 100%;
+}
+
+.input {
+    padding: 0 15px;
+    text-align: center;
+}

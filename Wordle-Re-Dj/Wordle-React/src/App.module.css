@@ -1,0 +1,12 @@
+.outerLayoutAfterLoading {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    margin: 5% 4% 0;
+}
+
+.outerLayoutAtTimeOfLoad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}

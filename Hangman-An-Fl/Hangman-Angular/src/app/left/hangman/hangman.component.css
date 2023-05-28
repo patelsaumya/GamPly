@@ -1,0 +1,12 @@
+.hangman {
+  margin: 10px;
+  height: fit-content;
+}
+
+.hangman > img {
+  width: 100%;
+}
+
+.noMistakes {
+  text-align: center;
+}

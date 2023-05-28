@@ -1,0 +1,17 @@
+.progress {
+    /*padding: 0 15px;*/
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+}
+
+.cardTitle {
+    height: 20%;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
